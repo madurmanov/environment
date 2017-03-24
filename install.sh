@@ -13,7 +13,7 @@ if confirm "$DYWI homebrew" ; then
   if [ ! -f "`which brew`" ] ; then
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   else
-    install_alredy "Homebrew"
+    install_already "Homebrew"
   fi
 fi
 
@@ -25,7 +25,7 @@ if confirm "$DYWI homebrew casks" ; then
   for CASK in ${BREW_CASKS[*]} ; do
     install_alert "brew cask $CASK"
     if brew cask ls --versions $CASK > /dev/null 2> /dev/null ; then
-      install_alredy "Brew cask $CASK"
+      install_already "Brew cask $CASK"
     else
       brew cask install $CASK
     fi
@@ -40,7 +40,7 @@ if confirm "$DYWI homebrew formulas" ; then
   for FORMULA in ${BREW_FORMULAS[*]} ; do
     install_alert "brew formula $FORMULA"
     if brew ls --versions $FORMULA > /dev/null ; then
-      install_alredy "Brew formula $FORMULA"
+      install_already "Brew formula $FORMULA"
     else
       brew install $FORMULA
     fi
