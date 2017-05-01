@@ -58,7 +58,7 @@ fi
 
 echo "\033[1mIf you want use new version of bash follow these steps:\033[0m"
 echo "1. Run \033[32m'vi /etc/shells'\033[0m and add \033[32m'/usr/local/bin/bash'\033[0m to the list;"
-echo "2. Run \033[32m'chsh -s /usr/local/bin/bash [username]'\033[0m and restart your terminal."
+echo "2. Run \033[32m'chsh -s /usr/local/bin/bash username'\033[0m and restart your terminal."
 
 
 install_complete
