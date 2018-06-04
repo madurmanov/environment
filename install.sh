@@ -47,13 +47,6 @@ if confirm "$DYWI homebrew formulas" ; then
 fi
 
 
-# Fonts
-
-if confirm "$DYWI fonts" ; then
-  install fonts $HOME/Library/Fonts
-fi
-
-
 # Bash
 
 echo "\033[1mIf you want use new version of bash follow these steps:\033[0m"
