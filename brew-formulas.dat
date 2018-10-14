@@ -9,3 +9,7 @@ node
 tmux
 tree
 wget
+bat
+prettyping
+htop
+httpie
