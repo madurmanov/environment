@@ -1,0 +1,2 @@
+- Before import `Basic.terminal` install fonts.
+- Before run `sh install.sh` perform `sudo chown -R $(whoami) /usr/local/lib/pkgconfig`.
