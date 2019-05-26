@@ -1,5 +1,7 @@
 # environment
 
+Working environment included fonts, presets and must be have programs.
+
 - Before import `Basic.terminal` install fonts.
 - Before execute `sh install.sh` perform `sudo chown -R $(whoami) /usr/local/lib/pkgconfig`.
 
