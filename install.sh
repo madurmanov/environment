@@ -47,11 +47,4 @@ if mi_confirm "Do you want install homebrew formulas" ; then
 fi
 
 
-# Bash
-
-echo "\033[1mIf you want use new version of bash follow these steps:\033[0m"
-echo "1. Run \033[32m'sudo vi /etc/shells'\033[0m and add \033[32m'/usr/local/bin/bash'\033[0m to the list;"
-echo "2. Run \033[32m'chsh -s /usr/local/bin/bash username'\033[0m and restart your terminal."
-
-
 mi_complete

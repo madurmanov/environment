@@ -1,2 +1,9 @@
+# environment
+
 - Before import `Basic.terminal` install fonts.
-- Before run `sh install.sh` perform `sudo chown -R $(whoami) /usr/local/lib/pkgconfig`.
+- Before execute `sh install.sh` perform `sudo chown -R $(whoami) /usr/local/lib/pkgconfig`.
+
+If you want use new version of bash follow these steps:
+
+1. Execute `sudo vi /etc/shells` and add `/usr/local/bin/bash` to the list;
+2. Execute `chsh -s /usr/local/bin/bash username` and restart your terminal.
