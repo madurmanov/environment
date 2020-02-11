@@ -20,7 +20,7 @@ fi
 # Homebrew casks
 
 if mi_confirm "Do you want install homebrew casks" ; then
-  IFS=$'\n' read -d '' -r -a BREW_CASKS < brew-casks.dat
+  IFS=$'\n' read -d '' -r -a BREW_CASKS < casks.dat
   for CASK in ${BREW_CASKS[*]} ; do
     mi_step "Install brew cask $CASK"
     if brew cask ls --versions $CASK > /dev/null 2> /dev/null ; then
@@ -35,7 +35,7 @@ fi
 # Homebrew formulas
 
 if mi_confirm "Do you want install homebrew formulas" ; then
-  IFS=$'\n' read -d '' -r -a BREW_FORMULAS < brew-formulas.dat
+  IFS=$'\n' read -d '' -r -a BREW_FORMULAS < formulas.dat
   for FORMULA in ${BREW_FORMULAS[*]} ; do
     mi_step "Install brew formula $FORMULA"
     if brew ls --versions $FORMULA > /dev/null ; then
