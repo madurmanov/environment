@@ -26,7 +26,7 @@ if mi_confirm "Do you want install homebrew casks" ; then
     if brew cask ls --versions $CASK > /dev/null 2> /dev/null ; then
       mi_step "Brew cask $CASK already installed"
     else
-      brew cask install $CASK
+      brew install --cask $CASK
     fi
   done
 fi
