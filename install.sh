@@ -10,7 +10,7 @@ mi_start
 if mi_confirm "Do you want install homebrew" ; then
   mi_step "Install homebrew"
   if [ ! -f "`which brew`" ] ; then
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   else
     mi_step "Homebrew already installed"
   fi
