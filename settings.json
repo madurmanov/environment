@@ -1,132 +1,146 @@
 {
-    "workbench.colorTheme": "Ayu Light Bordered",
-    "editor.tabSize": 2,
-    "editor.cursorStyle": "block",
-    "editor.renderWhitespace": "trailing",
-    "liveServer.settings.donotShowInfoMsg": true,
-    "files.trimTrailingWhitespace": true,
-    "vim.useSystemClipboard": true,
-    "vim.leader": "<space>",
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["j", "j"],
-            "after": ["<Esc>"]
-        }
-    ],
-    "vim.normalModeKeyBindings": [
-        {
-            "before": ["H"],
-            "commands": ["workbench.action.previousEditor"]
-        },
-        {
-            "before": ["L"],
-            "commands": ["workbench.action.nextEditor"]
-        },
-        {
-            "before": ["Q"],
-            "after": ["<C-w>", "q"]
-        },
-
-        {
-            "before": ["|"],
-            "after": ["<C-w>", "v"]
-        },
-        {
-            "before": ["_"],
-            "after": ["<C-w>", "s"]
-        },
-
-        {
-            "before": ["<C-h>"],
-            "commands": ["workbench.action.focusLeftGroup"]
-        },
-        {
-            "before": ["<C-j>"],
-            "commands": ["workbench.action.focusBelowGroup"]
-        },
-        {
-            "before": ["<C-k>"],
-            "commands": ["workbench.action.focusAboveGroup"]
-        },
-        {
-            "before": ["<C-l>"],
-            "commands": ["workbench.action.focusRightGroup"]
-        },
-
-        {
-            "before": ["<leader>", "f"],
-            "commands": ["workbench.action.findInFiles"]
-        },
-        {
-            "before": ["<leader>", "s"],
-            "commands": ["workbench.action.showAllSymbols"]
-        },
-
-        {
-            "before": ["<leader>", "g", "p"],
-            "commands": ["editor.action.dirtydiff.next"]
-        },
-        {
-            "before": ["<leader>", "g", "r"],
-            "commands": ["git.revertSelectedRanges"]
-        },
-        {
-            "before": ["<leader>", "g", "j"],
-            "commands": ["workbench.action.editor.nextChange"]
-        },
-        {
-            "before": ["<leader>", "g", "k"],
-            "commands": ["workbench.action.editor.previousChange"]
-        }
-    ],
-    "vscodeGoogleTranslate.preferredLanguage": "Russian",
-    "editor.fontFamily": "'Meslo LG M DZ', Consolas, 'Courier New', monospace",
-    "workbench.colorCustomizations": {
-       "[Ayu*]": {
-            "editorBracketHighlight.foreground1": "#2D2D2D",
-            "editorBracketHighlight.foreground2": "#2D2D2D",
-            "editorBracketHighlight.foreground3": "#2D2D2D",
-            "editorBracketHighlight.foreground4": "#2D2D2D",
-            "editorBracketHighlight.foreground5": "#2D2D2D",
-            "editorBracketHighlight.foreground6": "#2D2D2D",
-            "foreground": "#2D2D2D",
-            "list.inactiveSelectionForeground": "#2D2D2D",
-            "sideBarSectionHeader.foreground": "#1D2D2D",
-            "statusBar.foreground": "#2D2D2D",
-            "tab.activeForeground": "#2D2D2D",
-            "tab.inactiveForeground": "#2D2D2D",
-
-            "activityBar.background": "#FEF8E7",
-            "debugToolBar.background": "#FEF8E7",
-            "dropdown.background": "#FEF8E7",
-            "editor.background": "#FEF8E7",
-            "editor.lineHighlightBackground": "#F9EDDB",
-            "editorBracketMatch.background": "#FFDD99",
-            "editorGroupHeader.tabsBackground": "#FEF8E7",
-            "editorHoverWidget.background": "#FEF8E7",
-            "editorSuggestWidget.background": "#FEF8E7",
-            "editorSuggestWidget.selectedBackground": "#F9EDDB",
-            "editorWidget.background": "#FEF8E7",
-            "input.background": "#FEF8E7",
-            "list.activeSelectionBackground": "#F9EDDB",
-            "list.focusBackground": "#F9EDDB",
-            "list.hoverBackground": "#F9EDDB",
-            "list.inactiveSelectionBackground": "#F9EDDB",
-            "minimap.background": "#FEF8E7",
-            "notificationCenterHeader.background": "#FEF8E7",
-            "notifications.background": "#FEF8E7",
-            "panel.background": "#FEF8E7",
-            "scrollbarSlider.activeBackground": "#F9EDDB",
-            "scrollbarSlider.background": "#F9EDDB",
-            "scrollbarSlider.hoverBackground": "#F9EDDB",
-            "sideBar.background": "#FEF8E7",
-            "sideBarSectionHeader.background": "#FEF8E7",
-            "statusBar.background": "#FEF8E7",
-            "tab.activeBackground": "#FEF8E7",
-            "tab.inactiveBackground": "#FEF8E7",
-            "terminal.background": "#FEF8E7",
-            "titleBar.activeBackground": "#FEF8E7",
-            "titleBar.inactiveBackground": "#FEF8E7"
-        }
+  "workbench.colorTheme": "Ayu Light Bordered",
+  "editor.tabSize": 2,
+  "editor.cursorStyle": "block",
+  "editor.renderWhitespace": "trailing",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "files.trimTrailingWhitespace": true,
+  "vim.useSystemClipboard": true,
+  "vim.smartRelativeLine": true,
+  "vim.leader": "<space>",
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.duration": 998,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
     }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["H"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["L"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["Q"],
+      "after": ["<C-w>", "q"]
+    },
+
+    {
+      "before": ["|"],
+      "after": ["<C-w>", "v"]
+    },
+    {
+      "before": ["_"],
+      "after": ["<C-w>", "s"]
+    },
+
+    {
+      "before": ["<C-h>"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["<C-j>"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["<C-k>"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["<C-l>"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["workbench.view.scm"]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "commands": ["workbench.action.showAllSymbols"]
+    },
+
+    {
+      "before": ["<leader>", "g", "p"],
+      "commands": ["editor.action.dirtydiff.next"]
+    },
+    {
+      "before": ["<leader>", "g", "r"],
+      "commands": ["git.revertSelectedRanges"]
+    },
+    {
+      "before": ["<leader>", "g", "j"],
+      "commands": ["workbench.action.editor.nextChange"]
+    },
+    {
+      "before": ["<leader>", "g", "k"],
+      "commands": ["workbench.action.editor.previousChange"]
+    }
+  ],
+  "vscodeGoogleTranslate.preferredLanguage": "Russian",
+  "editor.fontFamily": "'Meslo LG M DZ', Consolas, 'Courier New', monospace",
+  "workbench.colorCustomizations": {
+    "[Ayu*]": {
+      "editorBracketHighlight.foreground1": "#2D2D2D",
+      "editorBracketHighlight.foreground2": "#2D2D2D",
+      "editorBracketHighlight.foreground3": "#2D2D2D",
+      "editorBracketHighlight.foreground4": "#2D2D2D",
+      "editorBracketHighlight.foreground5": "#2D2D2D",
+      "editorBracketHighlight.foreground6": "#2D2D2D",
+      "foreground": "#2D2D2D",
+      "list.inactiveSelectionForeground": "#2D2D2D",
+      "sideBarSectionHeader.foreground": "#1D2D2D",
+      "statusBar.foreground": "#2D2D2D",
+      "tab.activeForeground": "#2D2D2D",
+      "tab.inactiveForeground": "#2D2D2D",
+
+      "activityBar.background": "#FEF8E7",
+      "debugToolBar.background": "#FEF8E7",
+      "dropdown.background": "#FEF8E7",
+      "editor.background": "#FEF8E7",
+      "editor.lineHighlightBackground": "#F9EDDB",
+      "editorBracketMatch.background": "#FFDD99",
+      "editorGroupHeader.tabsBackground": "#FEF8E7",
+      "editorHoverWidget.background": "#FEF8E7",
+      "editorSuggestWidget.background": "#FEF8E7",
+      "editorSuggestWidget.selectedBackground": "#F9EDDB",
+      "editorWidget.background": "#FEF8E7",
+      "input.background": "#FEF8E7",
+      "list.activeSelectionBackground": "#F9EDDB",
+      "list.focusBackground": "#F9EDDB",
+      "list.hoverBackground": "#F9EDDB",
+      "list.inactiveSelectionBackground": "#F9EDDB",
+      "minimap.background": "#FEF8E7",
+      "notificationCenterHeader.background": "#FEF8E7",
+      "notifications.background": "#FEF8E7",
+      "panel.background": "#FEF8E7",
+      "scrollbarSlider.activeBackground": "#F9EDDB",
+      "scrollbarSlider.background": "#F9EDDB",
+      "scrollbarSlider.hoverBackground": "#F9EDDB",
+      "sideBar.background": "#FEF8E7",
+      "sideBarSectionHeader.background": "#FEF8E7",
+      "statusBar.background": "#FEF8E7",
+      "tab.activeBackground": "#FEF8E7",
+      "tab.inactiveBackground": "#FEF8E7",
+      "terminal.background": "#FEF8E7",
+      "titleBar.activeBackground": "#FEF8E7",
+      "titleBar.inactiveBackground": "#FEF8E7"
+    }
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
